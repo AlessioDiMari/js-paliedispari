@@ -8,6 +8,9 @@
     
     <h1>Pari e dispari</h1>
 
+    <p>Inserisci un numero tra da 1 e 5 e indovina se la somma di esso
+        e il numero casuale tra 1 e 5 scelto dal computer sia pari o dispari
+    </p>
     <div>
         <label for="numero-utente">Inserisci un numero da 1 a 5</label>
         <input type="number" id="numero-utente" min="1" max="5">
@@ -15,11 +18,11 @@
     <div>
         <label for="scelta-utente">Come sara la somma tra il tuo numero e quello del computer?</label>
         <select name="" id="scelta-utente">
-            <option value="">Pari</option>
-            <option value="">Dispari</option>
+            <option value="pari">Pari</option>
+            <option value="dispari">Dispari</option>
         </select>
     </div>
-    <button id="play-button">Gioca</button>
+    <button id="play-button" onclick="calcolaEsito">Gioca</button>
     <div id="risultato"></div>
 </body>
 </html>
