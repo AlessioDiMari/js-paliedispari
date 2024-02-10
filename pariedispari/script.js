@@ -22,9 +22,10 @@ function calcolaEsito() {
     let sceltaUtente = document.getElementById("scelta-utente").value;
 
     // Creo il numero casuale generato dal computer
-    let numeroComputer = Math.floor(Math.random * 5) + 1;
+    let numeroComputer = Math.floor(Math.random() * 5) + 1;
 
     // Inizializzo il risultato
     const risultato = document.getElementById("risultato");
+
     
 }
