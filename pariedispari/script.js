@@ -25,7 +25,18 @@ function calcolaEsito() {
     let numeroComputer = Math.floor(Math.random() * 5) + 1;
 
     // Inizializzo il risultato
-    const risultato = document.getElementById("risultato");
+    const esito = document.getElementById("esito");
 
-    
+    // Faccio la somma tra il numero utente e quello del computer
+    let somma = numeroUtente + numeroComputer;
+
+    // Creo un if per decidere se la somma è peri o dispari
+    let risultato;
+
+    if (somma % 2 == 0 ){
+        risultato = "pari";
+    } else {
+        risultato = "dispari"
+    }
+
 }
