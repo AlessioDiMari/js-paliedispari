@@ -39,4 +39,10 @@ function calcolaEsito() {
         risultato = "dispari"
     }
 
+    // Creo un ulteriore if per verificare se l'utente ha indovinato
+    if ( risultato === sceltaUtente) {
+        esito.innerHTML = `Hai indovinato! La somma è ${somma}, ed è ${risultato}.`;
+    } else {
+        esito.innerHTML = `Mi dispiace ma hai perso! La somma è ${somma}, ed è ${risultato}.`;
+    }
 }
