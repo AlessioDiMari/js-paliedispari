@@ -13,6 +13,16 @@ buttonVerify.addEventListener("click", function(){
     // memorizzo la parola inserita nell'input
     let word = userWord.value;
 
+    if ( paliVerify(word) ){
+        document.getElementById("esito").innerHTML = "Le parole sono palindrome";
+    } else {
+        document.getElementById("esito").innerHTML = "Le parole non sono palindrome";
+    }
+
+})
+
+function paliVerify(word){
+
     // Inizializzo una variaile dove inserirò le
     // lettere della variabile nell'ordine inverso
     let flippedWord = "";
@@ -27,10 +37,9 @@ buttonVerify.addEventListener("click", function(){
     
     // Creo un if per verificare che le due parole siano identiche
     if( word === flippedWord){
-        document.getElementById("esito").innerHTML = "Le parole sono palindrome";
+        return true
     } else {
-        document.getElementById("esito").innerHTML = "Le parole non sono palindrome";
+        return false
     }
-    
 
-})
+}
