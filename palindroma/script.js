@@ -25,5 +25,12 @@ buttonVerify.addEventListener("click", function(){
         
     }
     
+    // Creo un if per verificare che le due parole siano identiche
+    if( word === flippedWord){
+        document.getElementById("esito").innerHTML = "Le parole sono palindrome";
+    } else {
+        document.getElementById("esito").innerHTML = "Le parole non sono palindrome";
+    }
     
+
 })
